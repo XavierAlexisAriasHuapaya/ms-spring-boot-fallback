@@ -19,7 +19,7 @@ public class FallbackController {
         Map<String, Object> response = new HashMap<>();
         response.put("message",
                 "The service is temporarily unavailable due to technical problems. We are working to resolve it as soon as possible. Please try again in a few minutes. We appreciate your patience.");
-        return new ResponseEntity<>(response, HttpStatus.OK);
+        return new ResponseEntity<>(response, HttpStatus.SERVICE_UNAVAILABLE);
     }
 
 }
